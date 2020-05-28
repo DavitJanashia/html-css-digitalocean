@@ -2,6 +2,145 @@
   box-sizing: border-box;
   margin:0;
   /* DEBUG:  */
-  border:1px solid black;
-  padding:5px;
+  /* border:1px solid black; */
+  /* padding:5px; */
   }
+  body{
+    /* DEBUG:  */
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200vh;
+  }
+
+  *::before, *::after{
+  box-sizing: border-box;
+}
+
+.my-nav-bottom{
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top:0;
+  left:0;
+  /* DEBUG:  */
+
+}
+
+
+.my-logo-header{
+  /* logo size */
+  /* DEBUG:  */
+  width: 180px;
+  height: 65px;
+
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  top:0;
+  left:0;
+  margin-left: 1em;
+  /* DEBUG:  */
+  /* background-color: red; */
+}
+
+.my-logo-header-container{
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+}
+
+
+img#my-logo-header-img{
+  width: 100%;
+  /* max-height: 200px;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
+  background-color: red; */
+}
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle-label{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-right: 1em;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display: block;
+  background-color: #5c6a86;
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content:'';
+  position: absolute;
+}
+
+.nav-toggle-label span::before{
+  bottom: 5px;
+}
+
+.nav-toggle-label span::after{
+  top: 5px;
+}
+
+
+.my-dropdown-container-box{
+  position: absolute;
+  text-align: left;
+  top:108%;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  color: #031c4e;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: 5px;
+  display: none !important;
+}
+
+.my-dropdown-container-box ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-dropdown-container-box li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+.my-dropdown-container-box a{
+  color: #031c4e;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.my-dropdown-container-box a:hover{
+  color:#000;
+}
+
+.nav-toggle:checked ~ .my-dropdown-container-box{
+  display: block !important;
+}
