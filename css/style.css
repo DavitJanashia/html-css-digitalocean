@@ -9,7 +9,7 @@ body{
   padding-top: 150px;
     /* DEBUG:  */
   background-color: rgba(0, 0, 0, 0.5);
-  height: 200vh;
+  min-height: 200vh;
 }
 
   *::before, *::after{
@@ -136,6 +136,11 @@ span{
 }
 
 .my-section-main.n1{
+  text-align: center;
+}
+
+
+.my-section-main.n2 h2, .my-section-main.n2 p {
   text-align: center;
 }
 
