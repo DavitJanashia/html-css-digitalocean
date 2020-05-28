@@ -144,7 +144,53 @@ span{
   text-align: center;
 }
 
+.my-section-main.n3{
+  text-align: center;
+}
 
+.my-section-main.n4 h2{
+  text-align: center;
+}
+
+
+
+.my-section-main.n5 h2{
+  text-align: center;
+}
+
+.my-col-section-main-5{
+  margin-bottom: 20px;
+}
+
+.my-col-section-main-5 div{
+  position: relative;
+}
+
+.my-col-section-main-5 a{
+  position: absolute;
+  right: 0;
+  margin-left: 15px;
+}
+
+.my-col-section-main-5 div span:nth-child(2){
+  margin-left: 35px;
+}
+
+.my-col-section-main-5 div{
+  border-bottom: 1px solid white;
+}
+
+
+.my-section-main.n6{
+  text-align: center;
+}
+
+.my-section-main.n7{
+  text-align: center;
+}
+.my-col-footer-left > *{
+  display: block;
+}
 /* fine viewport MOBILE */
 
 @media all and (min-width:768px) {
