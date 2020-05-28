@@ -2,18 +2,26 @@
   box-sizing: border-box;
   margin:0;
   /* DEBUG:  */
-  /* border:1px solid black; */
-  /* padding:5px; */
+  /* border:1px solid black;
+  padding:5px; */
   }
-  body{
+body{
+  padding-top: 150px;
     /* DEBUG:  */
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 200vh;
-  }
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 200vh;
+}
 
   *::before, *::after{
   box-sizing: border-box;
 }
+
+/* inizio viewport MOBILE */
+
+.col-xs-3.my-nav{
+  height: 67px;
+}
+
 
 .my-nav-bottom{
   background-color: white;
@@ -23,25 +31,17 @@
   width: 100%;
   top:0;
   left:0;
-  /* DEBUG:  */
-
 }
 
 
 .my-logo-header{
-  /* logo size */
-  /* DEBUG:  */
   width: 180px;
   height: 65px;
-
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   top:0;
   left:0;
   margin-left: 1em;
-  /* DEBUG:  */
-  /* background-color: red; */
 }
 
 .my-logo-header-container{
@@ -53,12 +53,6 @@
 
 img#my-logo-header-img{
   width: 100%;
-  /* max-height: 200px;
-  position: absolute;
-  top:50%;
-  left:0;
-  transform: translatey(-50%);
-  background-color: red; */
 }
 
 .nav-toggle{
@@ -67,54 +61,38 @@ img#my-logo-header-img{
 
 .nav-toggle-label{
   position: absolute;
-  top:0;
-  right:0;
+  right: 0;
+  top:50%;
+  transform: translatey(-50%);
   margin-right: 1em;
-  /* border: 1px solid red; */
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
+.nav-toggle-label span{
   display: block;
   background-color: #5c6a86;
   height: 2px;
   width: 1.5em;
   border-radius: 2px;
   position: relative;
-
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  content:'';
-  position: absolute;
-}
-
-.nav-toggle-label span::before{
-  bottom: 5px;
-}
-
-.nav-toggle-label span::after{
-  top: 5px;
+span{
+  margin-bottom: 3px;
 }
 
 
 .my-dropdown-container-box{
+  width: 99vw;
   position: absolute;
   text-align: left;
   top:108%;
-  left: 0;
+  right:0;
   background-color: white;
-  width: 100%;
   color: #031c4e;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   margin-left: 5px;
-  display: none !important;
+  display: none;
 }
 
 .my-dropdown-container-box ul{
@@ -133,8 +111,8 @@ img#my-logo-header-img{
 .my-dropdown-container-box a{
   color: #031c4e;
   text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.4rem;
+  /* text-transform: uppercase; */
 }
 
 .my-dropdown-container-box a:hover{
@@ -143,4 +121,80 @@ img#my-logo-header-img{
 
 .nav-toggle:checked ~ .my-dropdown-container-box{
   display: block !important;
+  /* zemot tu sachiro iqna davamato !important */
+}
+
+
+
+.my-col-header-right{
+  text-align: center;
+}
+
+.my-form-header > *{
+  display: inline-block;
+  width: 100%;
+}
+
+.my-section-main.n1{
+  text-align: center;
+}
+
+
+/* fine viewport MOBILE */
+
+@media all and (min-width:768px) {
+  .nav-toggle-label{
+    display: none;
+  }
+
+
+  .my-dropdown-container-box{
+    position: static;
+    text-align: right;
+    width: 100%;
+    background-color: transparent;
+    color: #031c4e;
+    border-radius: 0;
+    top:0;
+    left:0;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  ul.my-nav-ul-right{
+    position: absolute;
+    top:50%;
+    right:0;
+  }
+
+  ul.my-nav-ul-left{
+    position: absolute;
+    top:50%;
+    left:0;
+  }
+
+ul.my-nav-ul-left li, ul.my-nav-ul-right li{
+    display: inline-block;
+    margin: 0;
+
+  }
+  .my-logo-header{
+    width: 100%;
+    float: left;
+  }
+  .col-sm-6.my-nav{
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .my-dropdown-container-box a{
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+  }
+
+
+  /* inizio HEADER */
+
+
 }
