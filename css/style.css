@@ -7,6 +7,7 @@
   /* overflow: hidden; */
   }
 
+
 ul{
   list-style: none;
   padding: 0;
@@ -24,6 +25,15 @@ body{
 
 .my-nav-bottom{
   box-shadow: 0 0 3px 3px rgba(0,0,0,0.05) ;
+}
+
+.my-section-main h2:first-of-type{
+  font-size: 34px;
+}
+
+.my-section-main p:first-of-type{
+  padding-top: 5px;
+  font-size: 20px;
 }
 
 header{
@@ -112,6 +122,10 @@ header .my-col-header-right input{
   background-color: #f3f5f9;
 }
 
+.my-section-main.n1 img{
+  height:  100%;
+}
+
 .my-section-main.n1 p{
   color:#6f7b97;
 }
@@ -124,17 +138,23 @@ header .my-col-header-right input{
   color:#6f7b97;
 }
 
-.my-buttons > input{
+.my-buttons > button{
   display: block;
   border: none;
   background-color: transparent;
   border-left: 2px solid  #e5e8ed;
   color: #687695;
+  font-size: 19px;
+  padding: 10px 10px;
 }
 
-.my-buttons > input:first-of-type{
+.my-buttons > button:first-of-type{
   border-left: 2px solid  #0069ff;
   color: #031b4e;
+}
+
+.my-section-main.n2 .col-xs-12:first-of-type{
+  margin-bottom: 60px;
 }
 
 .my-section-main.n3{
@@ -233,6 +253,8 @@ header .my-col-header-right input{
 
 footer{
   background-color: #031c4e;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 footer h4{
@@ -378,8 +400,20 @@ span{
   width: 100%;
 }
 
+.my-section-main{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .my-section-main.n1{
   text-align: center;
+}
+.my-section-main.n1 p:first-of-type{
+  padding-bottom: 20px;
+}
+
+.my-section-main.n1 .my-link-sec1{
+  padding-top: 30px;
 }
 
 
@@ -426,6 +460,34 @@ span{
 
 .my-section-main.n6{
   text-align: center;
+}
+
+
+.my-box-awesome.n2.left{
+  position: absolute;
+  width:0;
+  height: 100%;
+  top:0;
+  left:0;
+  font-size: 50px;
+  display: none;
+}
+
+.my-box-awesome.n2.right{
+  position: absolute;
+  width:0;
+  height: 100%;
+  top:0;
+  left:100%;
+  font-size: 50px;
+  display: none;
+  background-color: red;
+}
+
+
+
+.my-carousel-card-bottom{
+  position: relative;
 }
 
 .my-section-main.n7{
@@ -492,7 +554,11 @@ ul.my-nav-ul-left li, ul.my-nav-ul-right li{
 
   /* inizio HEADER */
 
-  .my-box-awesome{
+  .my-box-awesome.n1{
+    display: block;
+  }
+
+  .my-box-awesome.n2.left, .my-box-awesome.n2.right{
     display: block;
   }
 }
