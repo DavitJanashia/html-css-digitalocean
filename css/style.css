@@ -34,18 +34,49 @@ header{
   background-repeat: no-repeat;
 }
 
+header .my-col-header-left{
+  padding: 70px 50px;
+}
+
 header .my-col-header-left h2{
   color: #fefeff;
+  font-size: 56px;
 }
 
 header .my-col-header-left p{
   color: #bbccfd;
+  font-size: 20px;
+}
+
+header .my-col-header-right{
+  padding: 70px 10px;
+}
+
+header .my-col-header-right h4{
+  font-size: 26px;
+}
+
+header .my-col-header-right input{
+  padding: 10px 5px;
+  margin-bottom: 10px;
 }
 
 .my-box-header-form{
   background-color: white;
+  padding: 25px;
+  border-radius: 5px;
 }
-#my-start-button{
+
+.my-box-header-form  *{
+  border-radius: 4px;
+  border: none;
+}
+
+.my-box-header-form input{
+  border: 1px solid #eeeeee;
+}
+
+#my-start-link{
   text-decoration: none;
   color:#006aff;
 }
@@ -55,13 +86,27 @@ header .my-col-header-left p{
   text-decoration: none;
   color:white;
   background-color: #579aff;
+  padding: 6px 0;
+  margin-bottom: 10px;
 }
 
 #my-google-button{
   position: relative;
   text-decoration: none;
   color: #626262;
+  box-shadow: 1.5px 1.5px 1.5px 0 rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  margin-bottom: 12px;
 }
+
+#my-google-button i{
+  position: absolute;
+  left: 15px;
+  top:50%;
+  transform: translatey(-50%);
+  font-size: 17px;
+}
+
 
 .my-section-main.n1{
   background-color: #f3f5f9;
@@ -77,6 +122,19 @@ header .my-col-header-left p{
 
 .my-section-main.n2 p, .my-section-main.n2 ul,  .my-section-main.n2 article{
   color:#6f7b97;
+}
+
+.my-buttons > input{
+  display: block;
+  border: none;
+  background-color: transparent;
+  border-left: 2px solid  #e5e8ed;
+  color: #687695;
+}
+
+.my-buttons > input:first-of-type{
+  border-left: 2px solid  #0069ff;
+  color: #031b4e;
 }
 
 .my-section-main.n3{
