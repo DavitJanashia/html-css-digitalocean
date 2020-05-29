@@ -19,6 +19,15 @@ body{
   /* min-height: 200vh; */
 }
 
+article{
+  font-size: 16px;
+}
+
+.fa-circle{
+  font-size: 12px;
+  color:#006aff;
+}
+
   *::before, *::after{
   box-sizing: border-box;
 }
@@ -35,6 +44,11 @@ body{
   padding-top: 5px;
   font-size: 20px;
 }
+
+#my-p-innovative{
+  font-size: 15px;
+}
+
 
 header{
   /* background-image: url('../img/'); */
@@ -138,6 +152,19 @@ header .my-col-header-right input{
   color:#6f7b97;
 }
 
+.my-article-section2{
+  margin-bottom: 30px;
+}
+
+
+.my-article-section2 h4 {
+  padding-top:6px;
+}
+
+.my-buttons{
+  padding-bottom: 30px;
+}
+
 .my-buttons > button{
   display: block;
   border: none;
@@ -161,9 +188,22 @@ header .my-col-header-right input{
   background-color: #f3f5f9;
 }
 
-.my-section-main.n3 p, .my-section-main.n3 article{
+#my-paragraph1-section3{
   color:#6f7b97;
+  padding-bottom: 65px;
 }
+
+#my-paragraph2-section3{
+  color:#031c4e;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+
+.my-section-main.n3 p:nth-last-of-type(2){
+  color:#031c4e;
+}
+
 
 .carousel-top img{
   max-width: 100%;
@@ -186,7 +226,7 @@ header .my-col-header-right input{
   transform: translatey(-50%);
 }
 
-.my-box-awesome  .fa-angle-left{
+.my-box-awesome .fa-angle-left{
   position: absolute;
   right: 100%;
   top:50%;
@@ -198,6 +238,24 @@ header .my-col-header-right input{
 }
 .my-section-main.n4 *{
   overflow: hidden;
+}
+.my-section-main.n4 h2{
+  margin-bottom: 40px;
+}
+
+.my-section-main.n4 a{
+  font-size: 15px;
+}
+
+.my-section-main.n4 h4{
+  padding-top: 7px;
+}
+
+.my-section-main.n4 article{
+  padding-bottom: 8px;
+}
+.my-section-main.n4 .col-sm-3{
+  margin-bottom: 30px;
 }
 
 .my-section-main.n4 p, .my-section-main.n4 article{
@@ -215,10 +273,20 @@ header .my-col-header-right input{
 
 .col-sm-6.my-col-section-main-5.left > div span:first-child, .col-sm-6.my-col-section-main-5.right > div span:first-child {
   color: #eaeff8;
+  padding-left: 10px;
 }
 
 .col-sm-6.my-col-section-main-5.left > div span:nth-child(2), .col-sm-6.my-col-section-main-5.right >  div span:nth-child(2) {
   color: #bbc8ea;
+}
+
+.col-sm-6.my-col-section-main-5.left  a, .col-sm-6.my-col-section-main-5.right a {
+  padding-right: 10px;
+}
+
+.col-sm-6.my-col-section-main-5.left > div, .col-sm-6.my-col-section-main-5.right > div{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -230,31 +298,56 @@ header .my-col-header-right input{
   color:#6f7b97;
 }
 
+.my-section-main.n6 h2{
+  margin-bottom: 90px;
+}
+
 .carousel-bottom img{
-  width: 150px;
+  width: 250px;
+  max-width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .my-carousel-card-bottom{
   background-color: white;
+  padding: 40px 0;
+  margin-bottom: 40px;
 }
 
 .my-section-main.n7{
   background-image: url('../img/bg-home-cta.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .my-section-main.n7 h2{
   color: white;
+  margin-bottom: 30px;
 }
 
 #my-account2-button{
   background-color: white;
   color: #006aff;
   text-decoration: none;
+  padding: 13px 17px;
+  border-radius: 4px;
+  font-size: 18px;
+  display: inline-block;
 }
 
 footer{
   background-color: #031c4e;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+#my-logo-footer{
+  margin-bottom: 10px;
+}
+.my-col-footer-left p{
+  padding: 0;
+  margin: 0;
 }
 
 footer h4{
@@ -275,6 +368,9 @@ footer p:nth-of-type(2){
   font-size: 23px;
 }
 
+#my-social-media-footer{
+  margin-top: 12px;
+}
 
 
 #my-social-media-footer li{
@@ -453,7 +549,7 @@ span{
   margin-left: 35px;
 }
 
-.my-col-section-main-5 div{
+.my-col-section-main-5 div:not(:last-child){
   border-bottom: 1px solid white;
 }
 
@@ -468,7 +564,7 @@ span{
   width:0;
   height: 100%;
   top:0;
-  left:0;
+  left:-2%;
   font-size: 50px;
   display: none;
 }
@@ -478,7 +574,7 @@ span{
   width:0;
   height: 100%;
   top:0;
-  left:100%;
+  left:102%;
   font-size: 50px;
   display: none;
   background-color: red;
@@ -495,6 +591,11 @@ span{
 }
 .my-col-footer-left > *{
   display: block;
+}
+
+.my-col-footer a{
+  font-size: 18px;
+  line-height: 32px;
 }
 /* fine viewport MOBILE */
 
@@ -561,6 +662,11 @@ ul.my-nav-ul-left li, ul.my-nav-ul-right li{
   .my-box-awesome.n2.left, .my-box-awesome.n2.right{
     display: block;
   }
+
+  .my-buttons{
+    padding-left: 80px;
+  }
+
 }
 
 /* fine viewport TABLET */
