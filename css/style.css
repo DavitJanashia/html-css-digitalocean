@@ -19,6 +19,18 @@ body{
   /* min-height: 200vh; */
 }
 
+
+
+
+#my-sign-up-a{
+  border: 1px solid #006aff;
+  background: transparent;
+  border-radius: 4px;
+  color: #006aff;
+  padding: 10px 13px;
+
+}
+
 article{
   font-size: 16px;
 }
@@ -445,15 +457,14 @@ span{
 
 
 .my-dropdown-container-box{
-  width: 99vw;
+  width: 50vw;
   position: absolute;
   text-align: left;
   top:108%;
   right:0;
   background-color: white;
   color: #031c4e;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
   margin-left: 5px;
   display: none;
 }
@@ -466,6 +477,7 @@ span{
   margin-bottom: 1em;
   margin-left: 1em;
   margin-right: 1em;
+  text-align: center;
 }
 
 
@@ -473,6 +485,7 @@ span{
   color: #031c4e;
   text-decoration: none;
   font-size: 1.4rem;
+
   /* text-transform: uppercase; */
 }
 
@@ -600,12 +613,30 @@ span{
 /* fine viewport MOBILE */
 
 /* inizio viewport TABLET */
+@media all and (max-width:991px){
+  .my-dropdown-container-box li{
+    padding: 15px 10px 10px 10px;
+  }
+  .my-dropdown-container-box {
+    position: relative;
 
-@media all and (min-width:768px) {
+  }
+
+}
+
+@media all and (max-width:768px) {
+  .my-dropdown-container-box{
+    width: 99vw;
+    position: absolute;
+  }
+
+}
+
+
+@media all and (min-width:991px){
   .nav-toggle-label{
     display: none;
   }
-
 
   .my-dropdown-container-box{
     position: static;
@@ -620,6 +651,8 @@ span{
     display: flex;
     align-items: center;
   }
+
+
 
   ul.my-nav-ul-right{
     position: absolute;
@@ -652,8 +685,10 @@ ul.my-nav-ul-left li, ul.my-nav-ul-right li{
     margin-right: 0.7em;
   }
 
+}
 
-  /* inizio HEADER */
+@media all and (min-width:768px) {
+
 
   .my-box-awesome.n1{
     display: block;
